@@ -24,3 +24,7 @@ Route::middleware('auth:sanctum')->group(function () {
         ]);
     });
 });
+
+// Bonus routes
+Route::get('/test-scores/nilai-rt', [App\Http\Controllers\Api\TestScoreController::class, 'getNilaiRT']);
+Route::get('/test-scores/nilai-st', [App\Http\Controllers\Api\TestScoreController::class, 'getNilaiST']);
