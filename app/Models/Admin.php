@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * I don't know why did I create a new model for admin,
+ * I can just use the User model. but yknow, just for the sake of it
+ */
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -28,6 +33,7 @@ class Admin extends Authenticatable
     protected function casts(): array
     {
         return [
+            'id' => 'string',
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
@@ -39,7 +45,7 @@ class Admin extends Authenticatable
 
         static::creating(function ($admin) {
             if (empty($admin->id)) {
-                $admin->id = (string) Str::uuid();
+                $admin->id = (string)Str::uuid();
             }
         });
     }
