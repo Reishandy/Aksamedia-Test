@@ -33,7 +33,6 @@ class Admin extends Authenticatable
     protected function casts(): array
     {
         return [
-            'id' => 'string',
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
