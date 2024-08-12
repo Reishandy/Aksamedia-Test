@@ -14,6 +14,7 @@ class AuthController extends Controller
     // No need for register method since I'll just use seeders to create admin accounts, since this is just a test
     // And there is no requirement for user registration in the project :3
 
+    // TUGAS 1
     public function login(Request $request)
     {
         // Validate the request, and return json response if validation fails
@@ -65,6 +66,7 @@ class AuthController extends Controller
         ]);
     }
 
+    // TUGAS 7
     public function logout()
     {
         Auth::user()->tokens()->delete();

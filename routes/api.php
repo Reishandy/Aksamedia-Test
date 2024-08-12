@@ -9,9 +9,12 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Division routes
     Route::get('/divisions', [App\Http\Controllers\Api\DivisionController::class, 'get']);
-    Route::post('/divisions', [App\Http\Controllers\Api\DivisionController::class, 'get']);
 
     // Employee routes
+    Route::get('/employees', [App\Http\Controllers\Api\EmployeeController::class, 'get']);
+    Route::post('/employees', [App\Http\Controllers\Api\EmployeeController::class, 'post']);
+    Route::put('/employees/{id}', [App\Http\Controllers\Api\EmployeeController::class, 'put']);
+    Route::delete('/employees/{id}', [App\Http\Controllers\Api\EmployeeController::class, 'delete']);
 
     // test route
     Route::get('/test', function () {
