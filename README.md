@@ -1,5 +1,6 @@
 # Live demo at
-https://test.reishandy.my.id/api/
+api endpoint - https://test.reishandy.my.id/api/
+laeavel home - https://test.reishandy.my.id
 
 # How to run this project
 1. Clone the repository
@@ -9,8 +10,8 @@ https://test.reishandy.my.id/api/
 5. Run 'php artisan db:seed'
 6. Run 'php artisan serve'
 7. Visit `http://localhost:8000/` in your browser
-8. Login with the credentials:
-    - Username: admin
+8. Login api with the credentials:
+    - Username: admin or rei
     - Password: pastibisa
    
 ---
