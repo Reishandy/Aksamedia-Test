@@ -28,7 +28,7 @@ class AdminSeeder extends Seeder
             'name' => 'Reishandy',
             'username' => 'rei',
             'phone' => '089685440717',
-            'email' => 'akbar@reishandy.my.id',
+            'email' => 'akbar@reishandy.id',
             'password' => Hash::make('pastibisa'),
         ]);
     }

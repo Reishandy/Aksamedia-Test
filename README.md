@@ -1,7 +1,7 @@
 # Live demo at
-api endpoint - https://test.reishandy.my.id/api/
+api endpoint - https://test.reishandy.id/api/
 
-laeavel home - https://test.reishandy.my.id
+laeavel home - https://test.reishandy.id
 
 # How to run this project
 1. Clone the repository
